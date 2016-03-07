@@ -1,0 +1,14 @@
+{
+  "name": "howwedothings",
+  "version": "0.0.0",
+  "description": "NJI Media dev project",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "Lauren Marquez",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1"
+  }
+}

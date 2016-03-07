@@ -1,0 +1,103 @@
+/*
+ * 02_items/
+ */
+
+.box {
+	padding: 29px 32px;
+	background: $box-color;
+
+	h3 {
+		font-weight: bold;
+		min-height: 60px;
+	}
+}
+
+.tile {
+	position: relative;
+	width: 100%;
+	height: 192px;
+	
+	.hover {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 600;
+		padding: 35px 0;
+		text-align: center;
+		background: $brand;
+		color: #fff;
+		@include opacity(0);
+		@include transition(all 0.3s);
+		
+		&.animate {
+			@include translate(8px, 8px);
+			@include opacity(1);
+		}
+
+		.button {
+			margin-left: auto;
+			margin-right: auto;
+			cursor: pointer;
+		}
+	}
+
+	.front, .back {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		@include transform-style(preserve-3d);
+    	@include backface-visibility(hidden);
+	    @include transition(all .6s ease-in-out);
+	}
+
+	.front {		
+		z-index: 500;
+		@include transform(rotateX(0deg) rotateY(0deg));
+	}
+
+	&.flip .front {
+		@include transform(rotateY(180deg));
+	}
+
+	.back {
+		z-index: 400;
+		@include transform(rotateY(-180deg));
+	    background: $brand;
+	    display: table;
+
+	    p {
+	    	display: table-cell;
+	    	vertical-align: middle;
+	    	font-size: 16px;
+	    	text-align: center;
+	    	color: #fff;	
+	    }
+	}
+
+	&.flip .back {
+	    @include transform(rotateX(0deg) rotateY(0deg));
+	    z-index: 600;
+	}
+}
+
+.button {
+	display: block;
+	width: 126px;
+	margin-top: 32px;
+	padding: 10px 24px;
+	background: $button-color;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Didact Gothic', sans-serif;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+// @media only screen and (max-width: 1014px) {
+// 	.box {
+// 		h3 {
+// 			height: 110px;
+// 		}
+// 	}
+// }

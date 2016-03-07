@@ -1,0 +1,62 @@
+
+@media only screen and (max-width: 960px) {
+	/* For mobile phones: */
+	[class*="row"] {
+		margin-top: 0;
+		&:before, &:after {
+			clear: none;
+			display: block;
+		}
+
+		& > [class*="col-"] {
+			display: block;
+			float: none;
+			margin-right: 0;
+			width: 100%;
+
+			&.tile {
+				margin: 30px auto 70px;
+				width: 50%;
+				padding-top: 50%;
+
+				.hover {
+					top: -70px;
+					background: none;
+					color: #000;
+					@include opacity(1);
+					@include transition(none);
+					@include transform(none);
+
+					.button {
+						display: none;
+					}
+				}
+
+				.front, .back {
+					height: 100%;
+					width: 100%;
+
+					img {
+						height: inherit;
+						width: inherit;
+					}
+				}
+			}
+		}
+	}
+
+	main #properties-grid {
+		h2 {
+			width: 100%;
+		}
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	[class*="row"] > [class*="col-"] {
+		&.tile {
+			width: 80%;
+			padding-top: 80%;
+		}
+	}
+}

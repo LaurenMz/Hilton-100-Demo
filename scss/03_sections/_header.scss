@@ -1,0 +1,9 @@
+/*
+ * 03_sections/header
+ */
+
+ header {
+ 	height: 107px;
+ 	border-top: 7px solid #8b836e;
+ 	@include gradient(#ffffff, $off-white);
+ }
