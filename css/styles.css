@@ -236,20 +236,6 @@ p {
 /*
  * 03_sections/header
  */
-header {
-  height: 107px;
-  border-top: 7px solid #8b836e;
-  background: #ffffff;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(top, #ffffff 25%, #f2eeed 75%);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(top, #ffffff 25%, #f2eeed 75%);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(top, #ffffff 25%, #f2eeed 75%);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom, #ffffff 25%, #f2eeed 75%);
-  /* Standard syntax */ }
-
 /*
  * 03_sections/main
  */
