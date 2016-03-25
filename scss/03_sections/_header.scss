@@ -3,60 +3,60 @@
  */
 
 #brand {
-  position: absolute;
-  left: 0px;
-  top: -7px;
-  margin: 0px;
-  a {
-    display: block;
-    width: 303px;
-    height: 107px;
-    background: url(../assets/img/logo.png) 50% 50% no-repeat;
-    text-indent: -9999px;
-  }
+	position: absolute;
+	left: 0px;
+	top: -7px;
+	margin: 0px;
+	a {
+		display: block;
+		width: 303px;
+		height: 107px;
+		background: url(../assets/img/logo.png) 50% 50% no-repeat;
+		text-indent: -9999px;
+	}
 }
 
 .site__header {
-  background: $off_white_alt;
-  border-top: 7px solid $brand_aux;
-  .inner {
-    @extend %clearfix;
-    position: relative;
-    max-width: 960px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
+	background: $off_white_alt;
+	border-top: 7px solid $brand_aux;
+	.inner {
+		@extend %clearfix;
+		position: relative;
+		max-width: 960px;
+		padding: 0 20px;
+		margin: 0 auto;
+	}
 }
 .header__info {
-  float: right;
-  padding: 27px 0 33px;
+	float: right;
+	padding: 27px 0 33px;
 }
 .header__text {
-  display: inline-block;
-  // width: 264px;
-  padding-right: 22px;
-  font-size: 16px;
+	display: inline-block;
+	// width: 264px;
+	padding-right: 22px;
+	font-size: 16px;
 }
 .header__logo {
-  position: absolute;
-  top: -7px;
-  left: 0px;
+	position: absolute;
+	top: -7px;
+	left: 0px;
 }
 
 @media (max-width: 50em) { // 800
-  #brand {
-    position: static;
-    a {
-      margin: -7px auto 0;
-    }
-  }
-  .header__info {
-    float: none;
-    text-align: center;
-    padding: 15px 0px;
-    p {
-      margin-bottom: 10px;
-    }
-  }
+	#brand {
+		position: static;
+		a {
+			margin: -7px auto 0;
+		}
+	}
+	.header__info {
+		float: none;
+		text-align: center;
+		padding: 15px 0px;
+		p {
+			margin-bottom: 10px;
+		}
+	}
 }
 
