@@ -1,3 +1,109 @@
 /*
  * 03_sections/footer
  */
+
+.site__footer {
+	background: $off_white;
+	.inner {
+		// max-width: 960px;
+		// padding: 0 20px;
+		margin: 0 auto;
+	}
+}
+.footer__logos {
+	margin: 0px;
+	padding: 26px 0px 47px;
+	list-style: none;
+	text-align: center;
+	li {
+		margin: 0px 0px 5px 0px;
+		display: inline-block;
+	}
+	.brand {
+		background-image: url("/assets/img/footer_logos.png");
+		background-repeat: no-repeat;
+		width: 71px;
+		display: block;
+		height: 49px;
+		padding-left: 1px;
+	}
+	.logo--hilton {
+		background-position: 0 0;
+		&:hover {
+		background-position: 0 -50px;
+		}
+	}
+	.logo--waldorf {
+		background-position: -63px 0;
+		&:hover {
+		background-position: -63px -50px;
+		}
+	}
+	.logo--conrad {
+		background-position: -128px 0;
+		&:hover {
+		background-position: -128px -50px;
+		}
+	}
+	.logo--canopy {
+		background-position: -211px 0;
+		&:hover {
+		background-position: -211px -50px;
+		}
+	}
+	.logo--curio {
+		background-position: -292px 0;
+		&:hover {
+		background-position: -292px -50px;
+		}
+	}
+	.logo--tree {
+		background-position: -372px 0;
+		&:hover {
+		background-position: -372px -50px;
+		}
+	}
+	.logo--embassy {
+		background-position: -452px 0;
+		&:hover {
+		background-position: -452px -50px;
+		}
+	}
+	.logo--garden {
+		background-position: -524px 0;
+		&:hover {
+		background-position: -524px -50px;
+		}
+	}
+	.logo--hampton {
+		background-position: -603px 0;
+		&:hover {
+		background-position: -603px -50px;
+		}
+	}
+	.logo--homewood {
+		background-position: -673px 0;
+		&:hover {
+		background-position: -673px -50px;
+		}
+	}
+	.logo--home {
+		background-position: -751px 0;
+		&:hover {
+		background-position: -751px -50px;
+		}
+	}
+	.logo--grand {
+		background-position: -825px 0;
+		&:hover {
+		background-position: -825px -50px;
+		}
+	}
+	.logo--honors {
+		width: 67px;
+		background-position: -905px 0;
+		&:hover {
+		background-position: -905px -50px;
+		}
+	}
+}

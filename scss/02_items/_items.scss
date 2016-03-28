@@ -16,7 +16,7 @@
 	position: relative;
 	width: 100%;
 	height: 192px;
-	
+
 	.hover {
 		width: 100%;
 		height: 100%;
@@ -28,7 +28,7 @@
 		color: #fff;
 		@include opacity(0);
 		@include transition(all 0.3s);
-		
+
 		&.animate {
 			@include translate(8px, 8px);
 			@include opacity(1);
@@ -51,7 +51,7 @@
 	    @include transition(all .6s ease-in-out);
 	}
 
-	.front {		
+	.front {
 		z-index: 500;
 		@include transform(rotateX(0deg) rotateY(0deg));
 	}
@@ -71,7 +71,7 @@
 	    	vertical-align: middle;
 	    	font-size: 16px;
 	    	text-align: center;
-	    	color: #fff;	
+	    	color: #fff;
 	    }
 	}
 
@@ -80,7 +80,9 @@
 	    z-index: 600;
 	}
 }
-
+.uppercase {
+	text-transform: uppercase;
+}
 .button {
 	display: block;
 	width: 126px;
@@ -92,6 +94,13 @@
 	font-family: 'Didact Gothic', sans-serif;
 	letter-spacing: 1px;
 	text-decoration: none;
+	&.-inline {
+		display: inline-block;
+		padding: 8px 22px 9px;
+		letter-spacing: .09em;
+		width: auto;
+		margin: 0px;
+	}
 }
 
 // @media only screen and (max-width: 1014px) {
